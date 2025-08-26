@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Case 1</title>
+    <style>
+      .mainDiv {
+        width: 50vw;
+        height: 50vh;
+      }
+
+      .topLeft {
+        background-color: black;
+        position: absolute;
+        left: 0;
+      }
+
+      .topRight {
+        background-color: rgb(82, 81, 81);
+        position: absolute;
+        right: 0;
+      }
+
+      .bottomLeft {
+        background-color: rgb(101, 75, 75);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .bottomRight {
+        background-color: rgb(68, 96, 94);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .cornerCircles {
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        background-color: white;
+      }
+
+      #topLeftCorner {
+        border-radius: 0px 0px 100px 0px;
+      }
+
+      #topRightCorner {
+        border-radius: 0px 0px 0px 100px;
+        right: 0;
+      }
+
+      #bottomLeftCorner {
+        border-radius: 0px 100px 0px 0px;
+        bottom: 0;
+      }
+
+      #bottomRightCorner {
+        border-radius: 100px 0px 0px 0px;
+        bottom: 0;
+        right: 0;
+      }
+
+      .midCircles {
+        position: absolute;
+        width: 8rem;
+        height: 4rem;
+        background-color: white;
+        margin: auto;
+        right: 0;
+        left: 0;
+      }
+
+      #top {
+        border-radius: 0px 0px 200px 200px;
+      }
+
+      #bottom {
+        bottom: 0;
+        border-radius: 200px 200px 0px 0px;
+      }
+
+      .circleContainer {
+        width: 100%;
+        height: 100%;
+      }
+
+      .circles {
+        width: 15rem;
+        height: 15rem;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        border-radius: 10rem;
+      }
+
+      .sqInside {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: darkgray;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      .centerSq,
+      .centerCircle {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+
+      .centerSq {
+        background-color: white;
+        height: 200px;
+        width: 200px;
+      }
+
+      .centerCircle {
+        background-color: black;
+        height: 50%;
+        width: 50%;
+        border-radius: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv topLeft">
+      <div class="cornerCircles" id="topLeftCorner"></div>
+      <div class="circleContainer">
+        <div class="circles">
+          <div class="sqInside" id="topLeftSq"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mainDiv topRight">
+      <div class="cornerCircles" id="topRightCorner"></div>
+      <div class="circles">
+        <div class="sqInside" id="topRightSq"></div>
+      </div>
+    </div>
+    <div class="mainDiv bottomLeft">
+      <div class="cornerCircles" id="bottomLeftCorner"></div>
+      <div class="circles">
+        <div class="sqInside" id="bottomLeftSq"></div>
+      </div>
+    </div>
+    <div class="mainDiv bottomRight">
+      <div class="cornerCircles" id="bottomRightCorner"></div>
+      <div class="circles">
+        <div class="sqInside" id="bottomRightSq"></div>
+      </div>
+    </div>
+    <div class="midCircles" id="top"></div>
+    <div class="midCircles" id="bottom"></div>
+    <div class="centerSq">
+      <div class="centerCircle"></div>
+    </div>
+  </body>
+</html>
