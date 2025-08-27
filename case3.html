@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/lib/normalize.css" />
+    <title>Case 3</title>
+  </head>
+  <style>
+    main {
+      width: 100%;
+      height: 300vh;
+    }
+    .container {
+      aspect-ratio: 1/1;
+    }
+    .greyLayer {
+      width: 300px;
+      aspect-ratio: 1/1;
+      border: 15px solid grey;
+      border-radius: 10rem;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .redLayer {
+      width: 275px;
+      aspect-ratio: 1/1;
+      border: 15px solid red;
+      border-radius: 10rem;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .circle {
+      border-radius: 10rem;
+      width: 275px;
+      aspect-ratio: 1/1;
+      position: absolute;
+      margin: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    p {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: fit-content;
+    }
+
+    #first {
+      background-color: black;
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      top: 0;
+    }
+
+    #second {
+      background-color: gray;
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      top: 152%;
+    }
+
+    #third {
+      background-color: darkblue;
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      top: 250%;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="container">
+        <div class="greyLayer"></div>
+        <div class="redLayer"></div>
+      </div>
+      <div class="circle" id="first"><p>Circle Edge</p></div>
+      <div class="circle" id="second"><p>Are you enjoying</p></div>
+      <div class="circle" id="third">
+        <p>Institute of Software Engineering</p>
+      </div>
+    </main>
+  </body>
+</html>
