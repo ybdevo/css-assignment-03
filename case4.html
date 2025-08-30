@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/lib/normalize.css" />
+    <title>Case 4</title>
+    <style>
+      section {
+        height: 100vh;
+        position: relative;
+      }
+
+      .txt {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: fit-content;
+        width: fit-content;
+        font-size: 10rem;
+      }
+
+      .navbar {
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+      }
+
+      .nav-1 {
+        background-color: brown;
+      }
+
+      .nav-2 {
+        background-color: hotpink;
+      }
+
+      .nav-3 {
+        background-color: gray;
+      }
+
+      .nav-4 {
+        background-color: black;
+      }
+
+      .navTxt {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        position: absolute;
+        left: 3%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="navbar nav-1"><p class="navTxt">Card 1</p></div>
+      <h1 class="txt">Hello</h1>
+    </section>
+    <section>
+      <div class="navbar nav-2"><p class="navTxt">Card 2</p></div>
+      <h1 class="txt">I'm</h1>
+    </section>
+    <section>
+      <div class="navbar nav-3"><p class="navTxt">Card 3</p></div>
+      <h1 class="txt">just a</h1>
+    </section>
+    <section>
+      <div class="navbar nav-4"><p class="navTxt">Card 4</p></div>
+      <h1 class="txt">samurai</h1>
+    </section>
+  </body>
+</html>
