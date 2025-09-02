@@ -5,474 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/lib/normalize.css" />
     <title>Case 2</title>
+    <style>
+      nav {
+        position: fixed;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+        font-size: 1.2rem;
+      }
+
+      li {
+        list-style: none;
+        padding-bottom: 2vh;
+      }
+
+      .logo {
+        width: 150px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        margin: auto;
+        filter: brightness(0);
+      }
+
+      .links-container {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+      }
+
+      .nav-link {
+        margin-right: 30px;
+      }
+
+      main {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+      }
+
+      .side-links-container {
+        min-height: 100vh;
+        width: 10%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 60px;
+        padding-top: 50px;
+      }
+
+      .side-link {
+        color: white;
+        font-weight: bold;
+      }
+
+      .images-container,
+      .paragraph-container {
+        margin-left: 12%;
+      }
+
+      .images-container {
+        margin-top: 80px;
+      }
+
+      .image {
+        width: 29vw;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(3, 0, 23);
+        color: white;
+        height: 70px;
+      }
+
+      footer > p {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-weight: bold;
+      }
+    </style>
   </head>
-  <style>
-    nav {
-      position: fixed;
-      top: 0;
-      height: 80px;
-      width: 100%;
-      background-color: white;
-      align-items: center;
-      border-bottom: 1px solid lightgrey;
-    }
-
-    a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      font-family: sans-serif;
-      font-size: 1.2rem;
-    }
-
-    li {
-      list-style: none;
-      padding-bottom: 2vh;
-    }
-
-    .logo {
-      width: 150px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 40px;
-      margin: auto;
-      filter: brightness(0);
-    }
-
-    .linksContainer {
-      height: fit-content;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 20px;
-      margin: auto;
-    }
-
-    .links {
-      margin-right: 30px;
-    }
-
-    main {
-      position: absolute;
-      width: 100%;
-      height: fit-content;
-    }
-
-    .sideLinksContainer {
-      min-height: 100vh;
-      width: 10%;
-      height: 100%;
-      background-color: rgb(0, 0, 0);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      top: 60px;
-      padding-top: 50px;
-    }
-
-    .sidelinks {
-      color: white;
-      font-weight: bold;
-    }
-
-    .imagesContainer,
-    .pContainer {
-      margin-left: 12%;
-    }
-
-    .imagesContainer {
-      margin-top: 80px;
-    }
-
-    .images {
-      width: 29.2vw;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      background-color: rgb(3, 0, 23);
-      color: white;
-      height: 70px;
-    }
-
-    footer > p {
-      height: fit-content;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      font-weight: bold;
-    }
-  </style>
   <body>
     <main>
-      <ul class="sideLinksContainer">
-        <li><a href="/case1.html" class="sidelinks">Home</a></li>
-        <li><a href="/case1.html" class="sidelinks">Services</a></li>
-        <li><a href="/case1.html" class="sidelinks">Contacts</a></li>
-        <li><a href="/case1.html" class="sidelinks">About Us</a></li>
+      <ul class="side-links-container">
+        <li><a href="/case1.html" class="side-link">Home</a></li>
+        <li><a href="/case1.html" class="side-link">Services</a></li>
+        <li><a href="/case1.html" class="side-link">Contacts</a></li>
+        <li><a href="/case1.html" class="side-link">About Us</a></li>
       </ul>
-      <div class="imagesContainer">
+
+      <div class="images-container">
         <img
           src="https://kimchisama.wordpress.com/wp-content/uploads/2018/05/midoriya-computer-gif.gif"
-          alt=""
-          class="images"
-          id="leftPic"
+          alt="left gif"
+          class="image"
+          id="left-pic"
         />
         <img
           src="https://kimchisama.wordpress.com/wp-content/uploads/2018/05/midoriya-computer-gif.gif"
-          alt=""
-          class="images"
-          id="middlePic"
+          alt="middle gif"
+          class="image"
+          id="middle-pic"
         />
         <img
           src="https://kimchisama.wordpress.com/wp-content/uploads/2018/05/midoriya-computer-gif.gif"
-          alt=""
-          class="images"
-          id="rightPic"
+          alt="right gif"
+          class="image"
+          id="right-pic"
         />
       </div>
-      <div class="pContainer">
+
+      <div class="paragraph-container">
         <p>
           Just made a quick redesign quickly but the design is not perfect but
           wanted to implement it. I followed the rules so nothing happened and
           also this is supposed to be much minimalist but can't do that because
           still more to learn. After learning more I'll make much more simple
-          websites. Btw god made me write these.
+          websites. Btw god made me write these. Just made a quick redesign
+          quickly but the design is not perfect but wanted to implement it. I
+          followed the rules so nothing happened and also this is supposed to be
+          much minimalist but can't do that because still more to learn. After
+          learning more I'll make much more simple websites. Btw god made me
+          write these. Just made a quick redesign quickly but the design is not
+          perfect but wanted to implement it. I followed the rules so nothing
+          happened and also this is supposed to be much minimalist but can't do
+          that because still more to learn. After learning more I'll make much
+          more simple websites. Btw god made me write these.
         </p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
-          odit culpa harum enim necessitatibus libero. Et dolores ipsa
-          distinctio amet expedita consectetur, delectus consequatur, adipisci
-          labore tenetur odio nihil illum. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Temporibus odit culpa harum enim necessitatibus libero. Et dolores
-          ipsa distinctio amet expedita consectetur, delectus consequatur,
-          adipisci labore tenetur odio nihil illum.Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Temporibus odit culpa harum enim
-          necessitatibus libero. Et dolores ipsa distinctio amet expedita
-          consectetur, delectus consequatur, adipisci labore tenetur odio nihil
-          illum.
+          Just made a quick redesign quickly but the design is not perfect but
+          wanted to implement it. I followed the rules so nothing happened and
+          also this is supposed to be much minimalist but can't do that because
+          still more to learn. After learning more I'll make much more simple
+          websites. Btw god made me write these. Just made a quick redesign
+          quickly but the design is not perfect but wanted to implement it. I
+          followed the rules so nothing happened and also this is supposed to be
+          much minimalist but can't do that because still more to learn. After
+          learning more I'll make much more simple websites. Btw god made me
+          write these. Just made a quick redesign quickly but the design is not
+          perfect but wanted to implement it. I followed the rules so nothing
+          happened and also this is supposed to be much minimalist but can't do
+          that because still more to learn. After learning more I'll make much
+          more simple websites. Btw god made me write these.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
+          Just made a quick redesign quickly but the design is not perfect but
+          wanted to implement it. I followed the rules so nothing happened and
+          also this is supposed to be much minimalist but can't do that because
+          still more to learn. After learning more I'll make much more simple
+          websites. Btw god made me write these. Just made a quick redesign
+          quickly but the design is not perfect but wanted to implement it. I
+          followed the rules so nothing happened and also this is supposed to be
+          much minimalist but can't do that because still more to learn. After
+          learning more I'll make much more simple websites. Btw god made me
+          write these. Just made a quick redesign quickly but the design is not
+          perfect but wanted to implement it. I followed the rules so nothing
+          happened and also this is supposed to be much minimalist but can't do
+          that because still more to learn. After learning more I'll make much
+          more simple websites. Btw god made me write these.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
+          Just made a quick redesign quickly but the design is not perfect but
+          wanted to implement it. I followed the rules so nothing happened and
+          also this is supposed to be much minimalist but can't do that because
+          still more to learn. After learning more I'll make much more simple
+          websites. Btw god made me write these. Just made a quick redesign
+          quickly but the design is not perfect but wanted to implement it. I
+          followed the rules so nothing happened and also this is supposed to be
+          much minimalist but can't do that because still more to learn. After
+          learning more I'll make much more simple websites. Btw god made me
+          write these. Just made a quick redesign quickly but the design is not
+          perfect but wanted to implement it. I followed the rules so nothing
+          happened and also this is supposed to be much minimalist but can't do
+          that because still more to learn. After learning more I'll make much
+          more simple websites. Btw god made me write these.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error
-          rem laudantium nemo rerum doloribus voluptatum placeat ducimus ex
-          blanditiis dolores inventore officia enim accusamus quasi cum, dolorem
-          a itaque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          vitae perferendis nisi cum doloribus ducimus a blanditiis quasi ipsa
-          repellendus totam ullam perspiciatis deserunt, natus nam praesentium
-          harum incidunt reprehenderit?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt a
-          aliquam eius doloribus totam quam, harum ullam numquam, repellendus
-          explicabo sit porro perspiciatis ducimus. Tempore molestias iusto
-          maxime cum dolorem.
-        </p>
+
+        <!-- your long lorem ipsum text continues... -->
       </div>
     </main>
+
     <nav class="navbar">
       <img
         src="https://ijseoracle.wordpress.com/wp-content/uploads/2011/06/logoijse2.png"
         alt="ijse-logo"
         class="logo"
       />
-      <div class="linksContainer">
-        <a href="/case1.html" class="links">Home</a>
-        <a href="/case1.html" class="links">Services</a>
-        <a href="/case1.html" class="links">Contacts</a>
-        <a href="/case1.html" class="links">About Us</a>
+      <div class="links-container">
+        <a href="/case1.html" class="nav-link">Home</a>
+        <a href="/case1.html" class="nav-link">Services</a>
+        <a href="/case1.html" class="nav-link">Contacts</a>
+        <a href="/case1.html" class="nav-link">About Us</a>
       </div>
     </nav>
+
     <footer>
       <p>Developed By IJSE Student (GOD)</p>
     </footer>
